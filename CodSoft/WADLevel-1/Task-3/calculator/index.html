@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+
+<link rel="stylesheet" href="/WADLevel-1/Task-3/calculator/css/styles.css">
+<link rel="icon" type="image/png" href="/WADLevel-1/Task-3/calculator/images/calculator.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header class="header">
+      <div class="con">
+        <div class="img">
+          <img src="/WADLevel-1/Task-3/calculator/images/math.png">
+        </div>
+        <div class="name">
+          <h1 id="title0">Basic Calculator</h1>
+        </div>
+      </div>
+    </header>
+  <div class="bbody">
+    <div class="calculator">
+      <div class="ipn"><input type="text" id="display" disabled>
+      <div class="bac"></div>
+      </div>
+      <div class="buttons">
+        <button onclick="appendNumber('7')">7</button>
+        <button onclick="appendNumber('8')">8</button>
+        <button onclick="appendNumber('9')">9</button>
+        <button onclick="appendOperator('/')">/</button>
+        <button onclick="appendNumber('4')">4</button>
+        <button onclick="appendNumber('5')">5</button>
+        <button onclick="appendNumber('6')">6</button>
+        <button onclick="appendOperator('*')">*</button>
+        <button onclick="appendNumber('1')">1</button>
+        <button onclick="appendNumber('2')">2</button>
+        <button onclick="appendNumber('3')">3</button>
+        <button onclick="appendOperator('-')">-</button>
+        <button onclick="appendNumber('0')">0</button>
+        <button onclick="appendNumber('.')">.</button>
+        <button onclick="appendOperator('+')">+</button>
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="calculate()">=</button>
+      </div>
+    </div>
+    <div class="info">
+      <div class="facts">
+        <h1 id="title0">Facts:</h1>
+        <h4 id="factcon">
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <p class="d-block w-100" id="facttext">Invention: The first mechanical calculator was invented by French mathematician Blaise<br/> Pascal in the 17th century. It was called the Pascaline and could perform addition and subtraction.</p>
+              </div>
+              <div class="carousel-item">
+                <p class="d-block w-100" id="facttext">Electronics: The first electronic calculator was created in the 1960s. It was much larger than modern calculators and used vacuum tubes.</p>
+              </div>
+              <div class="carousel-item">
+                <p class="d-block w-100" id="facttext">Scientific Calculators: Scientific calculators, capable of performing complex mathematical functions like trigonometry and logarithms, became widely available in the 1970s and 1980s.</p>
+              </div><div class="carousel-item">
+                <p class="d-block w-100" id="facttext">Graphing Calculators: Graphing calculators, which can plot graphs of equations, were introduced in the 1980s. They are commonly used in mathematics and science education.</p>
+              </div><div class="carousel-item">
+                <p class="d-block w-100" id="facttext">Solar-Powered Calculators: Many calculators are powered by solar cells, which convert light into electricity. This makes them environmentally friendly and eliminates the need for batteries.</p>
+              </div><div class="carousel-item">
+                <p class="d-block w-100" id="facttext">Calculator Watches: In the 1980s, calculator watches gained popularity. These wristwatches featured a miniature calculator keypad and display, allowing users to perform calculations on their wrists.</p>
+              </div>
+            </div>
+          </div>
+            
+        </div>
+        <div class="ins">
+          <h2 id="title1">Instructions:</h2>
+          <div class="ul"><ul>
+            <li type="square" id="ol">Use only buttons on screen.</li>
+            <li type="square" id="ol">Do not give multiple operators consecutively.</li>
+            <li type="square" id="ol">Make sure you clear after every computation.</li>
+          </ul></div>
+        </div>
+      </div>
+      
+  </div>
+  <script src="/WADLevel-1/Task-3/calculator/script/script.js"></script>
+  <div class="foot">
+    <footer class="footer">
+      <div class="footer-text">
+          <p>Copyright &copy; 2024 | All Rights Reserved. <a href="mailto:charankalakoti@gmail.com">Contact me: charankalakoti@gmail.com</a></p>
+      </div>
+  </footer>
+  </div>
+</body>
+</html>
